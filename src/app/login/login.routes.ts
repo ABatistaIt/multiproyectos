@@ -6,6 +6,10 @@ export const ROUTES_LOGIN: Routes = [
         loadComponent: () => import('./login.component').then(m => m.LoginComponent),
         children: [
             {
+                path: 'livelis',
+                loadComponent: () => import('../projects/livelis/livelis-layout.component').then(m => m.LivelisLayoutComponent)
+            },
+            {
                 path: 'hologen',
                 loadComponent: () => import('../projects/hologen/holgen-layout.component').then(m => m.HolgenLayoutComponent)
             },
