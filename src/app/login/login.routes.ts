@@ -8,6 +8,10 @@ export const ROUTES_LOGIN: Routes = [
             {
                 path: 'livelis',
                 loadComponent: () => import('../projects/livelis/livelis-layout.component').then(m => m.LivelisLayoutComponent)
+            },
+            {
+                path: 'hologen',
+                loadComponent: () => import('../projects/hologen/holgen-layout.component').then(m => m.HolgenLayoutComponent)
             }
         ]
     },
